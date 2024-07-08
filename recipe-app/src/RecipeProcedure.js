@@ -314,34 +314,8 @@ const RecipeProcedure = ({ recipe }) => {
     },
     
   }
-  const { preparation, instructions } = procedures[recipe.name.replace(' ', '')];  
-//   const { preparation, instructions, image } = procedures[recipe.name.replace(' ', '')];
-  
 
-
-// return (
-//     <div className="recipe-procedure">
-//       <div className="recipe-image">
-//         <img src={image.default} alt={recipe.name} />
-//       </div>
-//       <div className="recipe-details">
-//         <h2>{recipe.name}</h2>
-//         <h3>Preparation:</h3>
-//         <ul>
-//           {preparation.map((item, index) => (
-//             <li key={index}>{item}</li>
-//           ))}
-//         </ul>
-//         <h3>Instructions:</h3>
-//         <ol>
-//           {instructions.map((step, index) => (
-//             <li key={index}>{step}</li>
-//           ))}
-//         </ol>
-//       </div>
-//     </div>
-//   );
-// };
+  const { preparation, instructions, image } = procedures[recipe.name.replace(' ', '')];
 
   return (
     <div className="recipe-procedure">
