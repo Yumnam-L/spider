@@ -1,7 +1,22 @@
 // src/RecipeProcedure.js
 import React from 'react';
-// import'./App.css'
-// import omletImage from './assets/omlet.jpeg';
+import './RecipeProcedure.css';
+import omeletImg from './assets/omelet.jpeg';
+import bananaImg from './assets/banana.jpg';
+import chickenImg from './assets/chicken-salad.jpg';
+import cookiesImg from './assets/cookies.jpeg';
+import curryImg from './assets/curry.jpeg';
+import fryImg from './assets/fry.jpeg';
+import guacamoleImg from './assets/guacamole.jpg';
+import hummusImg from './assets/hummus.jpg';
+import nutsImg from './assets/nuts.jpg';
+import pancakesImg from './assets/pancakes.jpg';
+import saladImg from './assets/salad.jpg';
+import sandwichImg from './assets/sandwich.jpg';
+import smoothieImg from './assets/smoothie.jpg';
+import spaghettiImg from './assets/spaghetti.jpg';
+import tacosImg from './assets/tacos.jpg';
+
 
 const RecipeProcedure = ({ recipe }) => {
   const procedures = {
@@ -25,7 +40,7 @@ const RecipeProcedure = ({ recipe }) => {
         'Sprinkle cheese over one half of the omelet, fold it over, and cook until the cheese melts.',
         'Serve hot.',
       ],
-    //   image: omletImage,
+      image: omeletImg,
     },
     Pancakes: {
       preparation: [
@@ -47,6 +62,7 @@ const RecipeProcedure = ({ recipe }) => {
         'Cook until bubbles form on the surface, then flip and cook until browned on the other side.',
         'Serve with syrup and your favorite toppings.',
       ],
+      image: pancakesImg,
       
     },
     Smoothie: {
@@ -62,6 +78,7 @@ const RecipeProcedure = ({ recipe }) => {
         'Blend until smooth.',
         'Pour into a glass and enjoy.',
       ],
+      image: smoothieImg,
       
     },
     ChickenSalad: {
@@ -80,6 +97,7 @@ const RecipeProcedure = ({ recipe }) => {
         'Pour the dressing over the salad and toss to coat.',
         'Serve chilled.',
       ],
+      image: chickenImg,
     },
     SpaghettiBolognese: {
         preparation: [
@@ -102,6 +120,7 @@ const RecipeProcedure = ({ recipe }) => {
             'Cook spaghetti according to package instructions.',
             'Serve the Bolognese sauce over the spaghetti.'
         ],
+        image: spaghettiImg,
     },
     ChickenCurry: {
         preparation: [
@@ -126,7 +145,8 @@ const RecipeProcedure = ({ recipe }) => {
             'Cook for 20-25 minutes until chicken is cooked through and sauce thickens.',
             'Serve with rice or naan bread.'
         ],
-    },
+        image: curryImg,
+      },
     BeefTacos: {
         preparation: [
             '1 Onion, diced',
@@ -147,6 +167,7 @@ const RecipeProcedure = ({ recipe }) => {
             'Fill tortillas with beef mixture, lettuce, tomatoes, cheese, avocado, and sour cream.',
             'Serve immediately.'
         ],
+        image: tacosImg,
     },
     ChocolateChipCookies: {
         preparation: [
@@ -169,6 +190,7 @@ const RecipeProcedure = ({ recipe }) => {
             'Bake for 10-12 minutes until edges are golden brown.',
             'Cool on wire racks.'
         ],
+        image: cookiesImg,
     },
     BananaBread: {
         preparation: [
@@ -189,6 +211,7 @@ const RecipeProcedure = ({ recipe }) => {
             'Bake for 60 minutes or until a toothpick inserted into the center comes out clean.',
             'Cool in the pan for 10 minutes, then transfer to a wire rack to cool completely.'
         ],
+        image: bananaImg,
     },
     FruitSalad: {
         preparation: [
@@ -204,6 +227,7 @@ const RecipeProcedure = ({ recipe }) => {
             'Pour yogurt mixture over the fruit and toss gently to co',
             'Serve immediately.'
         ],
+        image: saladImg,
     },
     Guacamole: {
         preparation: [
@@ -218,6 +242,7 @@ const RecipeProcedure = ({ recipe }) => {
             'Stir in onions, tomatoes, lemon juice, salt, and pepper.',
             'Serve with tortilla chips.'
         ],
+        image: guacamoleImg,
     },
     Hummus: {
         preparation: [
@@ -234,6 +259,7 @@ const RecipeProcedure = ({ recipe }) => {
             'Season with salt to taste.',
             'Serve with pita bread or vegetables.'
         ],
+        image: hummusImg,
     },
     RoastedNuts: {
         preparation: [
@@ -249,6 +275,7 @@ const RecipeProcedure = ({ recipe }) => {
             'Roast for 10-15 minutes, stirring occasionally, until golden brown.',
             'Cool and serve.'
         ],
+        image: nutsImg,
     },
     VegetableStirFry: {
         preparation: [
@@ -267,6 +294,7 @@ const RecipeProcedure = ({ recipe }) => {
             'Add soy sauce, salt, and pepper; stir to combine.',
             'Serve hot, optionally over rice or noodles.'
         ],
+        image: fryImg,
     },
     GrilledCheeseSandwich: {
         preparation: [
@@ -282,57 +310,55 @@ const RecipeProcedure = ({ recipe }) => {
             'Cook until bread is golden brown and cheese is melted, flipping once.',
             'Serve hot.'
         ],
+        image: sandwichImg,
     },
     
   }
-  const { preparation, instructions } = procedures[recipe.name.replace(' ', '')];  
-//   const { preparation, instructions, image } = procedures[recipe.name.replace(' ', '')];
+  const { preparation, instructions, image } = procedures[recipe.name.replace(' ', '')];
   
 
-
 // return (
-//     <div className="recipe-procedure">
-//       <div className="recipe-image">
-//         <img src={image.default} alt={recipe.name} />
-//       </div>
-//       <div className="recipe-details">
-//         <h2>{recipe.name}</h2>
-//         <h3>Preparation:</h3>
-//         <ul>
-//           {preparation.map((item, index) => (
-//             <li key={index}>{item}</li>
-//           ))}
-//         </ul>
-//         <h3>Instructions:</h3>
-//         <ol>
-//           {instructions.map((step, index) => (
-//             <li key={index}>{step}</li>
-//           ))}
-//         </ol>
-//       </div>
+//     <div>
+//       <h2>{recipe.name}</h2>
+//       <h3>Preparation:</h3>
+//       <ul>
+//         {preparation.map((item, index) => (
+//           <li key={index}>{item}</li>
+//         ))}
+//       </ul>
+//       <h3>Instructions:</h3>
+//       <ol>
+//         {instructions.map((step, index) => (
+//           <li key={index}>{step}</li>
+//         ))}
+//       </ol>
 //     </div>
 //   );
 // };
 
-return (
-    <div>
-      <h2>{recipe.name}</h2>
-      <h3>Preparation:</h3>
-      <ul>
-        {preparation.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-      <h3>Instructions:</h3>
-      <ol>
-        {instructions.map((step, index) => (
-          <li key={index}>{step}</li>
-        ))}
-      </ol>
+
+  return (
+    <div className="recipe-procedure">
+      <div className="recipe-details">
+        <h2>{recipe.name}</h2>
+        <h3>Preparation:</h3>
+        <ul>
+          {preparation.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+        <h3>Instructions:</h3>
+        <ol>
+          {instructions.map((step, index) => (
+            <li key={index}>{step}</li>
+          ))}
+        </ol>
+      </div>
+      <div className="recipe-image">
+        <img src={image} alt={recipe.name} />
+      </div>
     </div>
   );
 };
-
-
 
 export default RecipeProcedure;
