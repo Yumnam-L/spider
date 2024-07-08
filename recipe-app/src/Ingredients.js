@@ -21,28 +21,7 @@ const Ingredients = ({ selectedIngredients, setSelectedIngredients }) => {
         : [...prevSelected, ingredient]
     );
   };
-//   return (
-//     <div className="ingredients-page">
-//       <h2>Select Ingredients</h2>
-//       {Object.keys(ingredientCategories).map((category) => (
-//         <div key={category}>
-//           <h3>{category}</h3>
-//           {ingredientCategories[category].map((ingredient) => (
-//             <label key={ingredient}>
-//               <input
-//                 type="checkbox"
-//                 value={ingredient}
-//                 onChange={() => handleCheckboxChange(ingredient)}
-//                 checked={selectedIngredients.includes(ingredient)}
-//               />
-//               {ingredient}
-//             </label>
-//           ))}
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
+
   return (
     <div>
       <h2>Select Ingredients</h2>
