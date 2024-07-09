@@ -1,6 +1,6 @@
 # Recipe App
 
-Welcome to the Recipe App repository! This application allows users to browse recipes based on selected ingredients and view detailed cooking procedures.
+This application made using React allows users to browse recipes based on selected ingredients and view detailed cooking procedures.
 
 ## Features
 
