@@ -1,6 +1,5 @@
 // src/Ingredients.js
 import React from 'react';
-// import './assets/background.jpg'
 
 const ingredientCategories = {
   Vegetables: ['Tomatoes', 'Onions', 'Garlic', 'Bell Peppers', 'Carrots', 'Potatoes', 'Spinach', 'Broccoli', 'Mushrooms', 'Zucchini', 'Lettuce', 'Cucumbers'],
