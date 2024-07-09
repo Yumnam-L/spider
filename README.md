@@ -8,11 +8,12 @@ Welcome to the Recipe App repository! This application allows users to browse re
 - Select ingredients to find matching recipes.
 - View detailed recipes including ingredients, preparation steps, and cooking instructions.
 - Navigate to a specific recipe's procedure page to view cooking procedures.
-
+- Pictures of each Recipe dish is displayed along with the detailed instructions.
+  
 ## Technologies Used
 
 - React.js
-- JavaScript (ES6+)
+- JavaScript
 - HTML/CSS
 
 ## Setup Instructions
